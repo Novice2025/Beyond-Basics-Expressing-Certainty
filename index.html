@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Diplomacy: Certainty, Conditionals, and Idioms</title>
+    <!-- Chosen Palette: Dark Professional (Formal Blue and Calm Green for differentiation) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom Styling for Professional Feel */
+        :root {
+            --dark-bg: #141414;
+            --mid-bg: #1F1F1F;
+            --formal-blue: #3b82f6; /* Blue-500 */
+            --calm-green: #34D399; /* Green-400 */
+        }
+        body {
+            background-color: var(--dark-bg);
+            color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+        }
+        .header-nav {
+            background-color: rgba(20, 20, 20, 0.95);
+        }
+        .hero-title {
+            font-family: 'Poppins', sans-serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+        .lesson-card {
+            background-color: var(--mid-bg);
+            border: 1px solid #333;
+            transition: transform 0.2s, box-shadow 0.3s;
+            border-radius: 0.75rem;
+        }
+        .lesson-card:hover {
+            transform: scale(1.01);
+            box-shadow: 0 0 30px rgba(52, 211, 153, 0.2); /* Calm Green Shadow */
+        }
+        .flow-core {
+            border: 3px solid var(--formal-blue);
+            box-shadow: 0 0 15px rgba(59, 130, 246, 0.4);
+        }
+        .phrase-list li {
+            padding: 0.75rem 0;
+            border-bottom: 1px dashed #333;
+            display: flex;
+            flex-direction: column;
+        }
+        .phrase-list li:last-child {
+            border-bottom: none;
+        }
+        .phrase-list .expression {
+            font-weight: 700;
+            color: var(--formal-blue);
+            margin-bottom: 0.25rem;
+            display: block;
+            font-size: 1.1em;
+            font-family: 'Poppins', sans-serif;
+        }
+        .phrase-list .scenario {
+            font-style: italic;
+            color: #ccc;
+            font-size: 0.95em;
+        }
+        .portuguese-translation {
+            color: var(--calm-green);
+            font-weight: 500;
+            margin-left: 0.5rem;
+        }
+        .category-heading {
+            border-left: 4px solid var(--calm-green);
+            padding-left: 1rem;
+            color: var(--calm-green);
+        }
+        .phrase-definition {
+            font-size: 0.95em;
+            color: #a0a0a0;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <!-- Header Navigation -->
+    <header class="header-nav sticky top-0 left-0 right-0 z-50 p-4 shadow-xl">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold text-formal-blue font-poppins">ENGLISH MASTERY PHRASES</h1>
+            <nav class="hidden sm:block">
+                <a href="#certainty" class="text-sm font-medium hover:text-blue-400 mx-3 transition-colors">Certainty</a>
+                <a href="#time" class="text-sm font-medium hover:text-blue-400 mx-3 transition-colors">Time & Logic</a>
+                <a href="#condition" class="text-sm font-medium hover:text-blue-400 mx-3 transition-colors">Conditions</a>
+                <a href="#idioms" class="text-sm font-medium hover:text-blue-400 mx-3 transition-colors">Idioms</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pt-20 pb-10">
+        <!-- HERO Section -->
+        <section class="max-w-7xl mx-auto px-4 mb-12">
+            <div class="relative rounded-xl overflow-hidden shadow-2xl">
+                <div class="h-96 w-full bg-cover bg-center" style="background: linear-gradient(to bottom, rgba(20, 20, 20, 0.1) 0%, var(--dark-bg) 100%), url('https://placehold.co/1280x500/1F1F1F/FFFFFF?text=Advanced+Grammar+and+Idioms');">
+                    <div class="absolute inset-0 p-8 flex flex-col justify-end">
+                        <p class="text-xl font-medium text-gray-300 mb-2">Fluency & Nuance | 19 Essential Expressions</p>
+                        <h2 class="hero-title text-5xl md:text-7xl font-extrabold text-white mb-4 leading-tight">
+                            Beyond Basics: <span class="text-formal-blue">Expressing Certainty</span>
+                        </h2>
+                        <p class="max-w-3xl text-lg text-gray-200">
+                            Mastering formal and informal phrases for conviction, disbelief, timing, and common idiomatic expressions used in daily and professional life.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 1: Certainty, Belief, and Expectation -->
+        <section id="certainty" class="py-10 max-w-7xl mx-auto px-4">
+            <h3 class="text-3xl font-bold mb-8 category-heading">
+                1. Certainty, Belief, and Observation
+            </h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- A: To have no doubt -->
+                <div class="lesson-card p-6 rounded-xl">
+                    <span class="expression text-2xl mb-1">A. To have no doubt / Without doubt</span>
+                    <p class="phrase-definition">To be very certain or sure about an opinion or fact.</p>
+                    <ul class="phrase-list text-white ml-2 mt-2">
+                        <li>
+                            <span class="scenario">I have no doubt about it.</span>
+                        </li>
+                        <li>
+                            <span class="scenario">Let’s say that you are grumpy staff, but there’s **no doubt** that you’re the best staff of the year.</span>
+                            <span class="portuguese-translation">=> sem duvida / imaginei</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- B: To be under the impression -->
+                <div class="lesson-card p-6 rounded-xl">
+                    <span class="expression text-2xl mb-1">B. To be under the impression</span>
+                    <p class="phrase-definition">To believe something is true, but it may be inaccurate.</p>
+                    <ul class="phrase-list text-white ml-2 mt-2">
+                        <li>
+                            <span class="scenario">To be honest, I was **under the impression** that you couldn't get a parking ticket on private property.</span>
+                        </li>
+                        <li>
+                            <span class="scenario">Rita must be **under the impression** that it was him who stole her laptop.</span>
+                            <span class="portuguese-translation">=> suspeitar / ter a impressão que</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- J: Highly regarded -->
+                <div class="lesson-card p-6 rounded-xl">
+                    <span class="expression text-2xl mb-1">H. Highly regarded</span>
+                    <p class="phrase-definition">To consider someone or something very good or important; well-known.</p>
+                    <ul class="phrase-list text-white ml-2 mt-2">
+                        <li>
+                            <span class="scenario">So, he is a **highly regarded** staff.</span>
+                            <span class="portuguese-translation">=> bem respeitado</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- C: Come as no surprise -->
+                <div class="lesson-card p-6 rounded-xl">
+                    <span class="expression text-2xl mb-1">C. Come as no surprise</span>
+                    <p class="phrase-definition">Something that was expected; not surprising.</p>
+                    <ul class="phrase-list text-white ml-2 mt-2">
+                        <li>
+                            <span class="scenario">It **came as no surprise** when Ford shut down business.</span>
+                        </li>
+                        <li>
+                            <span class="scenario">The antonym for “ Come as no surprise “ is “ Come as a surprise “</span>
+                            <span class="portuguese-translation">=> Isso não me surpreende / Isso não é novidade pra mim</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Time, Condition, and Logic -->
+        <section id="time" class="py-10 max-w-7xl mx-auto px-4">
+            <h3 class="text-3xl font-bold mb-8 category-heading">
+                2. Time, Condition, and Logic
+            </h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- C: By the time -->
+                <div class="lesson-card p-6 rounded-xl">
+                    <span class="expression text-2xl mb-1">C. By the time</span>
+                    <p class="phrase-definition">Establishes a moment in time when an action will have happened, before another action begins.</p>
+                    <ul class="phrase-list text-white ml-2 mt-2">
+                        <li>
+                            <span class="scenario">**By the time** we arrived at the party, the other guests were already there.</span>
+                        </li>
+                        <li>
+                            <span class="scenario">**By the time** we got home, the baby was already asleep.</span>
+                            <span class="portuguese-translation">=> No momento que</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- D: It is only a matter of time -->
+                <div class="lesson-card p-6 rounded-xl">
+                    <span class="expression text-2xl mb-1">D. It is only a matter of time</span>
+                    <p class="phrase-definition">Used to state that something is inevitable, though the exact moment is unknown.</p>
+                    <ul class="phrase-list text-white ml-2 mt-2">
+                        <li>
+                            <span class="scenario">People are starting to ask for an explanation. You can say that **it is only a matter of time** until the system fails.</span>
+                            <span class="portuguese-translation">=> é uma questão de tempo</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- F: No point -->
+                <div class="lesson-card p-6 rounded-xl">
+                    <span class="expression text-2xl mb-1">F. No point</span>
+                    <p class="phrase-definition">Something that does not make logical sense or is futile.</p>
+                    <ul class="phrase-list text-white ml-2 mt-2">
+                        <li>
+                            <span class="scenario">There is **no point** in arriving late.</span>
+                            <span class="portuguese-translation">=> não faz sentido</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- E: To stand a chance of -->
+                <div class="lesson-card p-6 rounded-xl">
+                    <span class="expression text-2xl mb-1">E. To stand a chance of</span>
+                    <p class="phrase-definition">To have a prospect or possibility of success, winning, or survival.</p>
+                    <ul class="phrase-list text-white ml-2 mt-2">
+                        <li>
+                            <span class="scenario">If she doesn’t start training, she won’t **stand a chance of** winning the race.</span>
+                            <span class="portuguese-translation">=> sem chance</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Emphasis, Condition, and Reaction -->
+        <section id="condition" class="py-10 max-w-7xl mx-auto px-4">
+            <h3 class="text-3xl font-bold mb-8 category-heading">
+                3. Emphasis and Strict Conditions
+            </h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- D: By all means / By no means -->
+                <div class="lesson-card p-6 rounded-xl">
+                    <span class="expression text-2xl mb-1">D. By all means / By no means</span>
+                    <p class="phrase-definition">Used to emphasize something in a negative way (definitely not).</p>
+                    <ul class="phrase-list text-white ml-2 mt-2">
+                        <li>
+                            <span class="scenario">The ex-director was **by no means** fit for that job.</span>
+                        </li>
+                        <li>
+                            <span class="scenario">**By no means** am I going to my uncle’s wedding.</span>
+                            <span class="portuguese-translation">=> de jeito nenhum / simplesmente que não é</span>
+                        </li>
+                    </ul>
+                    <p class="text-sm text-gray-400 mt-2">Synonyms: On no account, In no way, Definitely not</p>
+                </div>
+
+                <!-- I: Under no circumstances -->
+                <div class="lesson-card p-6 rounded-xl">
+                    <span class="expression text-2xl mb-1">I. Under no circumstances</span>
+                    <p class="phrase-definition">No matter what the situation is, something must definitely not happen.</p>
+                    <ul class="phrase-list text-white ml-2 mt-2">
+                        <li>
+                            <span class="scenario">**Under no circumstances** is anyone allowed to leave home. This is a curfew.</span>
+                            <span class="portuguese-translation">=> de modo algum</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- E: To be taken aback -->
+                <div class="lesson-card p-6 rounded-xl">
+                    <span class="expression text-2xl mb-1">E. To be taken aback</span>
+                    <p class="phrase-definition">To be surprised or shocked and unable to respond immediately.</p>
+                    <ul class="phrase-list text-white ml-2 mt-2">
+                        <li>
+                            <span class="scenario">The mainstream news **took me aback** with death toll in China.</span>
+                            <span class="portuguese-translation">=> foi pego de surpresa</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Quantity, Reference, and Observation -->
+        <section id="quantity" class="py-10 max-w-7xl mx-auto px-4">
+            <h3 class="text-3xl font-bold mb-8 category-heading">
+                4. Quantity, Reference, and Observation
+            </h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- F: A great deal of something -->
+                <div class="lesson-card p-6 rounded-xl">
+                    <span class="expression text-2xl mb-1">F. A great deal of something</span>
+                    <p class="phrase-definition">To talk about a large quantity of something uncountable (time, research, effort).</p>
+                    <ul class="phrase-list text-white ml-2 mt-2">
+                        <li>
+                            <span class="scenario">A **great deal of** research has been done already on Coronavirus.</span>
+                            <span class="portuguese-translation">=> muito</span>
+                        </li>
+                    </ul>
+                    <p class="text-sm text-gray-400 mt-2">Synonyms: A good deal of something</p>
+                </div>
+
+                <!-- G: Make no reference -->
+                <div class="lesson-card p-6 rounded-xl">
+                    <span class="expression text-2xl mb-1">G. Make no reference</span>
+                    <p class="phrase-definition">To talk or write about something briefly, or just mention something quickly.</p>
+                    <ul class="phrase-list text-white ml-2 mt-2">
+                        <li>
+                            <span class="scenario">She **made no reference** to our agreement.</span>
+                        </li>
+                        <li>
+                            <span class="scenario">Many of my paintings **make reference** to the modern science.</span>
+                            <span class="portuguese-translation">=> se referir</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- A: To keep an eye on -->
+                <div class="lesson-card p-6 rounded-xl">
+                    <span class="expression text-2xl mb-1">A. To keep an eye on</span>
+                    <p class="phrase-definition">To watch or look after something to prevent harm.</p>
+                    <ul class="phrase-list text-white ml-2 mt-2">
+                        <li>
+                            <span class="scenario">I asked my wife to **keep an eye on** food on fire.</span>
+                            <span class="portuguese-translation">=> Dar uma olhada</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- B: To have a glance at -->
+                <div class="lesson-card p-6 rounded-xl">
+                    <span class="expression text-2xl mb-1">B. To have a glance at</span>
+                    <p class="phrase-definition">To read or see something quickly.</p>
+                    <ul class="phrase-list text-white ml-2 mt-2">
+                        <li>
+                            <span class="scenario">You can ask your teacher to **have a quick glance at** your essay.</span>
+                            <span class="portuguese-translation">=> Dar uma olhada rápido</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Figurative Language and Idioms -->
+        <section id="idioms" class="py-10 max-w-7xl mx-auto px-4">
+            <h3 class="text-3xl font-bold mb-8 category-heading">
+                5. Figurative Language and Idioms
+            </h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- G: Couch potato -->
+                <div class="lesson-card p-6 rounded-xl">
+                    <span class="expression text-2xl mb-1">G. Couch potato</span>
+                    <p class="phrase-definition">A lazy person who spends too much time sitting on the couch, often watching TV.</p>
+                    <ul class="phrase-list text-white ml-2 mt-2">
+                        <li>
+                            <span class="scenario">So, this person is a **couch potato**.</span>
+                            <span class="portuguese-translation">=> preguiçoso</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- H: Make up my mind -->
+                <div class="lesson-card p-6 rounded-xl">
+                    <span class="expression text-2xl mb-1">H. Make up my mind</span>
+                    <p class="phrase-definition">To become decisive after being indecisive.</p>
+                    <ul class="phrase-list text-white ml-2 mt-2">
+                        <li>
+                            <span class="scenario">I have **made up my mind**, I am going on the trip with you.</span>
+                            <span class="portuguese-translation">=> Já estou decidida</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- I: Let the cat out of the bag -->
+                <div class="lesson-card p-6 rounded-xl">
+                    <span class="expression text-2xl mb-1">I. Let the cat out of the bag</span>
+                    <p class="phrase-definition">To reveal a secret.</p>
+                    <ul class="phrase-list text-white ml-2 mt-2">
+                        <li>
+                            <span class="scenario">I can’t believe Jane **let the cat out of the bag**.</span>
+                            <span class="portuguese-translation">=> Revelar um secreto</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- J: Add insult to injury -->
+                <div class="lesson-card p-6 rounded-xl">
+                    <span class="expression text-2xl mb-1">J. Add insult to injury</span>
+                    <p class="phrase-definition">To worsen a bad situation.</p>
+                    <ul class="phrase-list text-white ml-2 mt-2">
+                        <li>
+                            <span class="scenario">The company was living a bad financial climate and with the lost of this contract **adds insult to injury**.</span>
+                            <span class="portuguese-translation">=> colocar fogo na lareira</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Summary Zone -->
+        <section id="summary" class="max-w-xl mx-auto px-4 my-16 text-center">
+            <div class="p-8 rounded-xl bg-formal-blue bg-opacity-20 border-2 border-formal-blue shadow-lg">
+                <h3 class="text-3xl font-bold text-blue-400 mb-4 font-poppins">
+                    Lesson Review
+                </h3>
+                <p class="text-lg text-gray-200 max-w-3xl mx-auto">
+                    These advanced phrases elevate your language, allowing you to express nuance in belief, time, and condition, which is crucial for high-level communication.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-6 text-gray-500 text-sm border-t border-gray-800 mt-10">
+        @ Teacher Daby - Professional Development
+    </footer>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, signInAnonymously, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+
+        // Boilerplate code to initialize Firebase/Auth as required by the environment.
+        const initializeFirebase = async () => {
+            try {
+                // Ensure variables are defined, even if the runtime environment doesn't provide them
+                const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : null;
+                const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
+
+                if (firebaseConfig) {
+                    const app = initializeApp(firebaseConfig);
+                    const auth = getAuth(app);
+
+                    if (initialAuthToken) {
+                        console.log("Firebase: Signing in with custom token...");
+                        await signInWithCustomToken(auth, initialAuthToken);
+                    } else {
+                        console.log("Firebase: Signing in anonymously (no custom token provided)...");
+                        await signInAnonymously(auth);
+                    }
+                    console.log("Firebase initialized and authenticated successfully.");
+                } else {
+                    console.error("Firebase: Configuration not available. Skipping initialization.");
+                }
+            } catch (error) {
+                console.error("Firebase init error:", error);
+            }
+        };
+        // Initialize Firebase when the window loads
+        window.onload = initializeFirebase;
+    </script>
+</body>
+</html>
